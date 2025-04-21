@@ -56,6 +56,7 @@ Launch the interactive Textual UI:
 ```bash
 python3 main.py
 ```
+[![asciicast](https://asciinema.org/a/ZT4RB2oPUBShiIG5SvduqTWU1.svg)](https://asciinema.org/a/ZT4RB2oPUBShiIG5SvduqTWU1)
 
 Follow the on-screen prompts to select a model and preset example.
 
