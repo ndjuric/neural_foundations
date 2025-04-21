@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 import random
 
-from network import Network
+from architecture_nn.network import Network
 
 
 class MarkovChain:
     """
     Simple character-level Markov chain for text generation using atomic primitives.
     """
+
     def __init__(self, k: int = 1):
         self.k = k
         self.model = {}

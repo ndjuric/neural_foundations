@@ -1,11 +1,12 @@
 from foundational_nn.hidden_cell import HiddenCell
-from network import Network
+from architecture_nn.network import Network
 
 
 class HopfieldNetwork:
     """
     Hopfield network for associative memory using atomic primitives.
     """
+
     def __init__(self, n_units: int):
         self.n_units = n_units
         # symmetric weight matrix
@@ -30,6 +31,7 @@ class HopfieldNetwork:
         state: list of ±1 values.
         """
         s = list(state)
+
         # simple sign activation
         def sign_activation(x):
             if hasattr(x, "__iter__"):
@@ -38,10 +40,12 @@ class HopfieldNetwork:
 
         for _ in range(steps):
             for i in range(self.n_units):
-                cell = HiddenCell(inputs=s,
-                                  weights=self.weights[i],
-                                  bias=0.0,
-                                  activation=sign_activation)
+                cell = HiddenCell(
+                    inputs=s,
+                    weights=self.weights[i],
+                    bias=0.0,
+                    activation=sign_activation,
+                )
                 out = cell.compute()
                 # out may be list or scalar
                 s[i] = out[0] if hasattr(out, "__iter__") else out

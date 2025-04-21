@@ -1,12 +1,10 @@
 import numpy as np
-
 from typing import Optional
 
-from .convolution_layer import ConvolutionLayer
-from .pooling_layer import PoolingLayer
-from .relu_activation import ReLUActivation
-
-from .cell import Cell
+from foundational_nn.cell import Cell
+from architecture_nn.convolution_layer import ConvolutionLayer
+from architecture_nn.pooling_layer import PoolingLayer
+from foundational_nn.relu_activation import ReLUActivation
 
 class Kernel(Cell):
     """Extracts features from input data using convolution or pooling."""

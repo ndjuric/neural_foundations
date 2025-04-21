@@ -1,3 +1,4 @@
+import numpy as np
 from typing import Optional
 
 from .cell import Cell

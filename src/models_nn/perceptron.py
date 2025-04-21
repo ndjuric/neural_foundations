@@ -3,13 +3,14 @@ import random
 
 from foundational_nn.output_cell import OutputCell
 from foundational_nn.sigmoid_activation import SigmoidActivation
-from network import Network
+from architecture_nn.network import Network
 
 
 class Perceptron:
     """
     Simple binary classifier using atomic primitives.
     """
+
     def __init__(self, n_inputs: int, learning_rate: float = 1.0):
         self.n_inputs = n_inputs
         self.lr = learning_rate
@@ -22,10 +23,9 @@ class Perceptron:
         """
         Compute binary prediction for input vector x.
         """
-        cell = OutputCell(inputs=x,
-                          weights=self.weights,
-                          bias=self.bias,
-                          activation=self.activation)
+        cell = OutputCell(
+            inputs=x, weights=self.weights, bias=self.bias, activation=self.activation
+        )
         out = cell.compute()
         # out may be array or scalar
         val = out[0] if hasattr(out, "__iter__") else out
