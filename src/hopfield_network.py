@@ -1,4 +1,4 @@
-from atomic import HiddenCell
+from foundational_nn.hidden_cell import HiddenCell
 from network import Network
 
 

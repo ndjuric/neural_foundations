@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import random
 
-from atomic import OutputCell, SigmoidActivation
+from foundational_nn.output_cell import OutputCell
+from foundational_nn.sigmoid_activation import SigmoidActivation
 from network import Network
 
 

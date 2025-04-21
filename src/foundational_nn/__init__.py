@@ -1,0 +1,1 @@
+"""Foundational neural network components package."""
