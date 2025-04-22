@@ -2,7 +2,7 @@
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7%2B-blue)]()
 
-> > This project is a deliberate reconstruction of neural network architectures from their fundamental primitives, inspired by the Asimov Institute's "[Neural Network Zoo](https://www.asimovinstitute.org/neural-network-zoo/)" visualization. The intent is pedagogical: to rigorously explore the first principles of these models through constructive implementation. While leveraging performant numerical libraries (NumPy, Pandas), the architecture emphasizes modularity and explicit composition. Examine the codebase to observe this structure directly; contributions and critical analysis are welcomed. Clone to inspect the underlying mechanics and extend as desired.
+> > This project is a deliberate reconstruction of neural network architectures from their fundamental primitives, inspired by the Asimov Institute's "[Neural Network Zoo](https://www.asimovinstitute.org/neural-network-zoo/)" visualization. The intent is pedagogical: to rigorously explore the first principles of these models through constructive implementation. While leveraging performant numerical libraries (NumPy, Pandas), the architecture emphasizes modularity and explicit composition. Examine the codebase to observe this structure directly; contributions and critical analysis are welcomed. Clone or fork to inspect the underlying mechanics and extend as desired.
 
 ## Table of Contents
 
@@ -111,10 +111,11 @@ print(p.visualize())  # Mermaid diagram, WIP
 1. Define new primitives in `foundational_nn`.
 2. Create custom layers or network patterns in `architecture_nn`.
 3. Package new models with demos in `models_nn`.
+4. Invoke the model from `main.py` entry point in repo root, currently it's a bit clunky but the idea is for working models to appear with some sane pre-defined real world use scenarios when `main.py` is ran.
 
 ## Contributing
 
-Contributions are welcome! Please open issues and submit pull requests.
+Contributions are welcome! Star, better yet fork and be creative! It's a playground made for learning. Also, feel free to open issues and submit pull requests.
 
 ## License
 
